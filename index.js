@@ -16,7 +16,6 @@ client.login(process.env.DISCORD_TOKEN);
 
 client.on("messageCreate", async (message) => {
   if (!message?.author.bot) {
-    message.author.send(`Echo ${message.content}`);
-    message.channel.send(`Echo ${message.content}`)
+    message.channel.send(`Echo ${message.content}`);
   }
 });
