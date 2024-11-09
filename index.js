@@ -17,7 +17,7 @@ client.login(process.env.DISCORD_TOKEN);
 
 client.on("messageCreate", async (message) => {
   if (!message?.author.bot) {
-    if ((message.content.toLocaleLowerCase).includes("lefenzii")) {
+    if (message.content.toLowerCase().includes("lefenzii")) {
       message.channel.send(`Echo ${message.content}`);
     }
   }
